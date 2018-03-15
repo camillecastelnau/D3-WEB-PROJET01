@@ -57,3 +57,10 @@ section {
   padding: 15px;
 
 }
+
+
+.portfolio {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}

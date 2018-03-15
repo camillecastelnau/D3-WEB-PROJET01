@@ -6,6 +6,10 @@
     <title>This is my web page</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="styles/main.css">
+
+    <script src="scripts/jquery-3.3.1.min.js"></script>
+    <script src="scripts/jquery.colorbox-min.js"></script>
+
   </head>
   <body>
 
@@ -38,6 +42,9 @@
       <div class="comp-section-content">
 
         <div class="comp-section-item">
+
+
+
           <img src="image/ALEXIS.png" alt="">
           <h2>Identité visuelle</h2>
           <p>Je conçois et élabore des projets d’identité visuelle : dans un style très minimaliste : j’aime ce qui est simple, épuré et compréhensible au premier regard.</p>
@@ -63,27 +70,28 @@
         <h1>Mon Portfolio</h1>
         <div class="portfolio">
             <div class="portfolio-content">
-              <img src="image/TADAOANDO.png" alt="This is a protfolio item">
+              <a class="gallery" href="image/TADAOANDO.png"><img src="image/TADAOANDO.png" alt=""></a>
+
               <h2><a href="#">Tadao Ando Identity</a></h2>
             </div>
             <div class="portfolio-content">
-              <img src="image/ALEXIS2.png" alt="This is a protfolio item">
+              <a class="gallery" href="image/ALEXIS2.png"><img src="image/ALEXIS2.png" alt=""></a>
               <h2><a href="#">Alexis Lautier Identity</a></h2>
             </div>
             <div class="portfolio-content">
-              <img src="image/VIN.jpg" alt="This is a protfolio item">
+              <a class="gallery" href="image/VIN.jpg"><img src="image/VIN.jpg" alt=""></a>
               <h2><a href="#">Concours Bordeaux Attitude 2018</a></h2>
             </div>
             <div class="portfolio-content">
-              <img src="image/MELVITA.png" alt="This is a protfolio item">
+              <a class="gallery" href="image/MELVITA.png"><img src="image/MELVITA.png" alt=""></a>
               <h2><a href="#">Melvita Cosmétique</a></h2>
             </div>
             <div class="portfolio-content">
-              <img src="image/CARSON.jpg" alt="This is a protfolio item">
+              <a class="gallery" href="image/CARSON.jpg"><img src="image/CARSON.jpg" alt=""></a>
               <h2><a href="#">Édition </a></h2>
             </div>
             <div class="portfolio-content">
-              <img src="image/ILLUSTRATION.jpg" alt="This is a protfolio item">
+              <a class="gallery" href="image/ILLUSTRATION.jpg"><img src="image/ILLUSTRATION.jpg" alt=""></a>
               <h2><a href="#">Illustration</a></h2>
             </div>
         </div>
@@ -106,6 +114,12 @@
           </ul>
         </div>
       </footer>
+
+      <script>
+          jQuery(document).ready(function () {
+            jQuery('a.gallery').colorbox({ opacity:0.5 , rel:'group1' });
+          });
+        </script>
 
   </body>
 </html>
